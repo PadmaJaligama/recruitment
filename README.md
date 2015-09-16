@@ -37,3 +37,4 @@ Notes
 * If any error conditions are encountered they are to be reported in a sensible way
 * Please modify this file to list any 3rd party libraries you have used (if any). For each library provide brief details of the license terms of the library and why you have included the library
 * Please assume that this code is to be used in a production customer environment
+* Please provide feedback to the team (via email) as you do your job
