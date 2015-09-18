@@ -65,9 +65,7 @@ public class ProcessFileMain{
 	private static org.apache.log4j.Logger log = Logger.getLogger(ProcessFileMain.class);
 	
 	public ProcessFileMain(String[] args){
-		if(args.length!=2){
-			usage(args);
-		}
+		usage(args);
 		srcFile=args[0];
 		dstFile=args[1];
 	}
@@ -86,7 +84,7 @@ public class ProcessFileMain{
 		try {
 			processFile.convert();			
 		} catch (Exception e) {
-			System.err.println(e.getMessage());
+			log.error(e.getMessage());
 			System.exit(0);
 		}
 	}
@@ -205,11 +203,10 @@ public class ProcessFileMain{
 	 * Usage
 	 */
 	void usage(String[] args){
-		if(args[0]==null){
-		log.error("Source File Path not specified");
-		} else {
-			log.error("Destination file path not specified");
-		}
+		
+		if(args.length!=2) {
+		log.error("Invalid arguments.");
 		System.exit(0);
+		}
 	}
 }
