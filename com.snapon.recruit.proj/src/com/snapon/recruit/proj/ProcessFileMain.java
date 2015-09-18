@@ -201,10 +201,9 @@ public class ProcessFileMain{
 	
 	
 	/*
-	 * Usage
+	 * Usage 
 	 */
-	void usage(String[] args){
-		
+	void usage(String[] args){		
 		if(args.length!=2) {
 		log.error("Invalid arguments.");
 		System.exit(0);
