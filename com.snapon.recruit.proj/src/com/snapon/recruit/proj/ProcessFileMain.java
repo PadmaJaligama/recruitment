@@ -138,7 +138,8 @@ public class ProcessFileMain{
 				b=null;
 				b=new byte[READ_BUFFER];
 				offset+=READ_BUFFER;
-			}						
+			}
+			log.info("File processed successfully");
 		} catch (Exception e) {
 			log.error("Exception while reading input file from path: " + srcFile);
 			throw new Exception("Exception while reading input file from path: " + srcFile);
