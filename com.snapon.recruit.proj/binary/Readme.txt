@@ -1,5 +1,7 @@
-How to Run :
-Java -jar recruitment.jar source_file destination_file
+
+ A Jar file is placed in binary folder
+ How to Run :
+ Java -jar recruitment.jar source_file destination_file
 
 Output: 
 1. output file will be created with output_data.bin name
